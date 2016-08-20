@@ -96,7 +96,7 @@ my $flag = "/home/videouser/VIDEO_SERVER/TMP/" . $opt_c . ".processing";
                 `chown apache:apache "$livsmount.$client"."/".$project"."/$DirStream"`;
                 `chown apache:apache "$livsmount.$client"."/".$project"."/$DirStream/$DirYear$DirMonth$DirDay"`;
                 `chown apache:apache "$livsmount.$client"."/".$project"."/$DirStream/$DirYear$DirMonth$DirDay/$DirHour"`;
-                                    `chown apache:apache "$livsmount.$client"."/".$project"."/$DirStream/$DirYear$DirMonth$DirDay/$DirHour/$DirSegment"`;
+                `chown apache:apache "$livsmount.$client"."/".$project"."/$DirStream/$DirYear$DirMonth$DirDay/$DirHour/$DirSegment"`;
                 `chown apache:apache "$livsmount.$client"."/".$project"."/$DirStream/$DirYear$DirMonth$DirDay/$DirHour/$DirSegment/Thumbs"`;
 
                 ### The RAID Destination Mount
@@ -127,8 +127,8 @@ my $flag = "/home/videouser/VIDEO_SERVER/TMP/" . $opt_c . ".processing";
                 ### Change Permissions and Owner
                 `chmod 644 "$clipDestination"`;
                 `chown apache:apache "$clipDestination"`;
-                                    `chmod 644 "$imgDestination"`;
-                                    `chown apache:apache "$imgDestination"`;
+                `chmod 644 "$imgDestination"`;
+                `chown apache:apache "$imgDestination"`;
 
                 ### Check For Completed Segments
                 my @Segments = <$Destination/*>;

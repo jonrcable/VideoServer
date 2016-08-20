@@ -17,17 +17,18 @@ $username = 'unity-sql';
 $password = 'pl@y1nl1vs';
 #### Unity SQL Name
 $database = 'unity-core';
+
 #### Client Directory
-$client = 'DEMO';
+$client = 'test-client';
 #### Project Directory
-$project = 'DEMO2';
+$project = 'test-project';
+
 #### Temp Directory Cache Cleanup
 $tmplife = '12';
 #### SQL Backup Lifespan
 $sqllife = '240';
 #### Default FTP Location
 $ftp = '/home/livs/';
+
 #### Default LIVS Mount
-$livsmount = '/mnt/unity-video/';
-#### Default DOCS Mount
-$docsmount = '/mnt/unity-documents/';
+$livsmount = '/home/ubuntu/video';
