@@ -1,6 +1,6 @@
 #!/usr/bin/perl
-use strict;
-use warnings FATAL => 'all';
+# use strict;
+# use warnings FATAL => 'all';
 use Getopt::Std;
 use POSIX;
 use Time::Local;

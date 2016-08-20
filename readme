@@ -15,6 +15,8 @@ sudo apt-get install git ffmpeg unzip gpac build-essential
 
 # Custom Compile Perl
 
+wget http://search.cpan.org/CPAN/authors/id/D/DO/DOM/perl-5.12.5.tar.gz
+
 wget http://www.cpan.org/src/5.0/perl-5.12.5.tar.gz
 tar -xzf perl-5.12.5.tar.gz
 cd perl-5.12.5
@@ -39,6 +41,9 @@ sudo adduser --system --no-create-home --ingroup qtss qtss
 git clone git@github.com:jonrcable/VideoServer.git Source
 
 cd ~/Source/INSTALL/DarwinStreamingSrvr6.0.3-Source
+
+cpan App::cpanminus
+
 
 sudo ./Install
 
