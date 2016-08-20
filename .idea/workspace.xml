@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7672126a-a572-4584-a16e-44068b4b903e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SCRIPTS/servicecheck.pl" afterPath="$PROJECT_DIR$/SCRIPTS/servicecheck.pl" />
     </list>
     <ignored path="VideoServer.iws" />
@@ -49,11 +48,11 @@
       <file leaf-file-name="servicecheck.pl" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/SCRIPTS/servicecheck.pl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-199">
-              <caret line="33" column="20" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
+            <state relative-caret-position="161">
+              <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
               <folding>
                 <element signature="e#16#32#0#Perl5" expanded="true" />
-                <element signature="e#1440#1473#0#Perl5" expanded="true" />
+                <element signature="e#1425#1458#0#Perl5" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -721,6 +720,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/mngserver.pl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="70" selection-start-line="18" selection-start-column="58" selection-end-line="18" selection-end-column="70" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#61#77#0#Perl5" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/SCRIPTS/videoserver.pl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -734,24 +744,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mngserver.pl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="70" selection-start-line="18" selection-start-column="58" selection-end-line="18" selection-end-column="70" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#61#77#0#Perl5" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SCRIPTS/servicecheck.pl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-199">
-          <caret line="33" column="20" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
+        <state relative-caret-position="161">
+          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
           <folding>
             <element signature="e#16#32#0#Perl5" expanded="true" />
-            <element signature="e#1440#1473#0#Perl5" expanded="true" />
+            <element signature="e#1425#1458#0#Perl5" expanded="true" />
           </folding>
         </state>
       </provider>
