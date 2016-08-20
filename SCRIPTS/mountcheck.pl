@@ -64,7 +64,7 @@ sub checkEndpoint($testMount, $s3bucket){
         checks3($testMount);
 
     }
-    # print "DONE \n";
+    print "DONE \n";
 
 }
 
