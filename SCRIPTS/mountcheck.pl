@@ -64,7 +64,7 @@ sub checkEndpoint($testMount, $s3bucket){
         checks3($testMount);
 
     }
-    print "DONE \n";
+    # print "DONE \n";
 
 }
 
@@ -92,6 +92,7 @@ sub checks3($testMount){
 
 }
 
+# retire this function I dont think we need it
 sub checkPaths(){
 
     require "/home/ubuntu/Source/INCLUDE/MasterConfig.inc";
