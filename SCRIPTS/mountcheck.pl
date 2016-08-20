@@ -9,7 +9,7 @@ $opt_s = "0";
 getopt('s:');
 chomp($opt_s);
 
-require "/home/home/ubuntu/Source/INCLUDE/MasterConfig.inc";
+require "/home/ubuntu/Source/INCLUDE/MasterConfig.inc";
 
 if($opt_s eq 'start'){
 
@@ -82,7 +82,7 @@ sub checkEndpoint($testMount, $s3bucket){
 
 sub checks3($testMount){
 
-    require "/home/home/ubuntu/Source/INCLUDE/MasterConfig.inc";
+    require "/home/ubuntu/Source/INCLUDE/MasterConfig.inc";
 
     print "\n* Client Test - $testMount -> ";
     if(-d "$testMount/$client"){
@@ -106,7 +106,7 @@ sub checks3($testMount){
 
 sub checkPaths(){
 
-    require "/home/home/ubuntu/Source/INCLUDE/MasterConfig.inc";
+    require "/home/ubuntu/Source/INCLUDE/MasterConfig.inc";
 
 	print "* Path Test - "; 
     if(-d "$docsmount/$client/$project/Video"){
@@ -123,7 +123,7 @@ sub checkPaths(){
 
 sub stopMounts(){
 
-	require "/home/home/ubuntu/Source/INCLUDE/MasterConfig.inc";
+	require "/home/ubuntu/Source/INCLUDE/MasterConfig.inc";
 	print "Disconnecting Mounted Devices -> ";
 	`umount $livsmount`;
 	print "DONE \n";
