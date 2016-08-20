@@ -48,7 +48,7 @@ sub checkEndpoint($testMount, $s3bucket){
         if(-d "$testMount"){
             ## No need to create a directory
             print "Mount Point Exists -> CHECK";
-            `umount $testMount > /dev/null 2>&1`;
+            `/bin/su - root -c\"umount $testMount"`;
             `s3fs $s3bucket $testMount -o use_cache=/tmp -o connect_timeout=30 -o retries=6 -o passwd_file=/home/ubuntu/.s3/creds`;
             checks3($testMount);
         }else{
@@ -113,7 +113,7 @@ sub stopMounts(){
 
 	require "/home/ubuntu/Source/INCLUDE/MasterConfig.inc";
 	print "Disconnecting Mounted Devices -> ";
-	`umount $livsmount`;
+            `/bin/su - root -c\"umount $testMount"`;
 	print "DONE \n";
 		
 }
