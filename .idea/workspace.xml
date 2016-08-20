@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7672126a-a572-4584-a16e-44068b4b903e" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SCRIPTS/servicecheck.pl" afterPath="$PROJECT_DIR$/SCRIPTS/servicecheck.pl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/readme" afterPath="$PROJECT_DIR$/readme" />
     </list>
     <ignored path="VideoServer.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -23,7 +23,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="readme" pinned="false" current-in-tab="true">
+      <file leaf-file-name="readme" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/readme">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="165">
@@ -46,13 +46,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="servicecheck.pl" pinned="false" current-in-tab="false">
+      <file leaf-file-name="servicecheck.pl" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/SCRIPTS/servicecheck.pl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="915">
-              <caret line="66" column="63" selection-start-line="66" selection-start-column="63" selection-end-line="66" selection-end-column="63" />
+            <state relative-caret-position="-199">
+              <caret line="33" column="20" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
               <folding>
                 <element signature="e#16#32#0#Perl5" expanded="true" />
+                <element signature="e#1440#1473#0#Perl5" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -119,8 +120,8 @@
         <option value="$PROJECT_DIR$/INCLUDE/MasterConfig.inc" />
         <option value="$PROJECT_DIR$/BACKUP/backupsql.pl" />
         <option value="$PROJECT_DIR$/SCRIPTS/mountcheck.pl" />
-        <option value="$PROJECT_DIR$/SCRIPTS/servicecheck.pl" />
         <option value="$PROJECT_DIR$/readme" />
+        <option value="$PROJECT_DIR$/SCRIPTS/servicecheck.pl" />
       </list>
     </option>
   </component>
@@ -712,6 +713,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/readme">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/SCRIPTS/videoserver.pl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -738,19 +747,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/SCRIPTS/servicecheck.pl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="915">
-          <caret line="66" column="63" selection-start-line="66" selection-start-column="63" selection-end-line="66" selection-end-column="63" />
+        <state relative-caret-position="-199">
+          <caret line="33" column="20" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
           <folding>
             <element signature="e#16#32#0#Perl5" expanded="true" />
+            <element signature="e#1440#1473#0#Perl5" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/readme">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
