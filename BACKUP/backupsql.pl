@@ -3,7 +3,7 @@ use Getopt::Std;
 use POSIX;
 
 my $flag = "/home/videouser/VIDEO_SERVER/TMP/backup.running";
-require "/home/videouser/VIDEO_SERVER/INCLUDE/MasterConfig.inc";
+require "/home/ubuntu/Source/INCLUDE/MasterConfig.inc";
 
 ### About To Begin, Drop our processing flag
 open (MYFILE, ">> $flag");
