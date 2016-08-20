@@ -31,7 +31,7 @@ sub startServices(){
     my $QTSSService = `/bin/ps cax | /bin/grep DarwinStreaming`;
     if(!$QTSSService){
         print "* QTSS Not Running... starting\n";
-        `perl /usr/local/sbin/streamingadminserver.pl`;
+        `/usr/local/bin/perl /usr/local/sbin/streamingadminserver.pl`;
     }
 
 }
