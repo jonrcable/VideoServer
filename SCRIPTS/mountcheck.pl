@@ -61,13 +61,13 @@ sub checkEndpoint($testMount, $s3bucket){
             ## No need to create a directory
             print "Mount Point Exists -> CHECK";
             `umount $testMount > /dev/null 2>&1`;
-            `s3fs $s3bucket $testMount -o allow_other -o -use_cache=/tmp -o -connect_timeout=30 -o -retries=6 -o passwd_file=/home/ubuntu/.s3/creds`;
+            `s3fs $s3bucket $testMount -o -use_cache=/tmp -o -connect_timeout=30 -o -retries=6 -o passwd_file=/home/ubuntu/.s3/creds`;
             checks3($testMount);
         }else{
             ## Create The Path
             print "Creating Mount Point -> CHECK";
             `mkdir $testMount`;
-            `s3fs $s3bucket $testMount -o allow_other -o -use_cache=/tmp -o -connect_timeout=30 -o -retries=6 -o passwd_file=/home/ubuntu/.s3/creds`;
+            `s3fs $s3bucket $testMount -o -use_cache=/tmp -o -connect_timeout=30 -o -retries=6 -o passwd_file=/home/ubuntu/.s3/creds`;
             checks3($testMount);
         }
 
