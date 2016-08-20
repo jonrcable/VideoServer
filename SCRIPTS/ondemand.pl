@@ -10,12 +10,12 @@ getopt('c:');
 chomp($opt_c);
 
 ### We have to get/require a config file to continue
-if(-e "/home/videouser/VIDEO_SERVER/CONFIGS/$opt_c"){
+if(-e "/home/ubuntu/Source/CONFIGS/$opt_c"){
 
-require "/home/videouser/VIDEO_SERVER/INCLUDE/MasterConfig.inc";
-require "/home/videouser/VIDEO_SERVER/CONFIGS/$opt_c";
+require "/home/ubuntu/Source/INCLUDE/MasterConfig.inc";
+require "/home/ubuntu/Source/CONFIGS/$opt_c";
 
-my $flag = "/home/videouser/VIDEO_SERVER/TMP/" . $opt_c . ".processing";
+my $flag = "/home/ubuntu/Source/TMP/" . $opt_c . ".processing";
 
 	### If processing is already set, leave until its time
 	if(-e "$flag"){
@@ -37,7 +37,7 @@ my $flag = "/home/videouser/VIDEO_SERVER/TMP/" . $opt_c . ".processing";
 			foreach(@file){
 					
                 ### Test the s3 Server Mounts
-                `nohup ./home/videouser/VIDEO_SERVER/SCRIPTS/mounts3.pl >/dev/null 2>&1 &`;
+                `nohup ./home/ubuntu/Source/SCRIPTS/mounts3.pl >/dev/null 2>&1 &`;
                 my $clipDestination = '';
                 ### Get FileName contents
                 my $FilePath = $_;
@@ -141,7 +141,7 @@ my $flag = "/home/videouser/VIDEO_SERVER/TMP/" . $opt_c . ".processing";
                     if($totalSegments == 19){
 
                     print "\n\nMARK THIS \n\n";
-                    $apidump = `lynx --dump "http://127.0.0.1/"$unity"/LIVS_Web/request.php?matrix&mark&stream="$feed"&name="$cam"&file="$UTCImg"&mnt="$Mount"&return=TMVideo&status=completed&utc="$UTCTime`;
+                    # $apidump = `lynx --dump "http://127.0.0.1/"$unity"/LIVS_Web/request.php?matrix&mark&stream="$feed"&name="$cam"&file="$UTCImg"&mnt="$Mount"&return=TMVideo&status=completed&utc="$UTCTime`;
                     print $apidump;
 
                 }
@@ -149,7 +149,7 @@ my $flag = "/home/videouser/VIDEO_SERVER/TMP/" . $opt_c . ".processing";
 			}
 		
 		### Clean up the process flag
-		`rm -rf /home/videouser/VIDEO_SERVER/TMP/$opt_c.processing`;
+		`rm -rf /home/ubuntu/Source/TMP/$opt_c.processing`;
 
 	}
 

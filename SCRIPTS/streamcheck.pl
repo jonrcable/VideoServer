@@ -9,7 +9,7 @@ $opt_s = "0";
 getopt('s:');
 chomp($opt_s);
 
-my $dir = '/home/videouser/VIDEO_SERVER/CONFIGS/';
+my $dir = '/home/ubuntu/Source/CONFIGS/';
 
 opendir(DIR, $dir) or die $!;
 
@@ -45,11 +45,11 @@ closedir(DIR);
 
 sub streamStart($streamConfig){
     
-	require("/home/videouser/VIDEO_SERVER/CONFIGS/$streamConfig");
+	require("/home/ubuntu/Source/CONFIGS/$streamConfig");
 	if(-e "/var/streaming/playlists/$playlist/$playlist.config"){
 		print "Playlist $playlist Exists -> ";
 
-        `cd /home/videouser/VIDEO_SERVER/SCRIPTS/; nohup ./videoserver.pl -c $streamConfig >/dev/null 2>&1 &`;
+        `cd /home/ubuntu/Source/SCRIPTS/; nohup ./videoserver.pl -c $streamConfig >/dev/null 2>&1 &`;
         print " Playlist $playlist has started successfully \n";
 		
 	}else{
@@ -62,7 +62,7 @@ sub streamStart($streamConfig){
 
 sub streamStop($streamConfig){
     
-        require("/home/videouser/VIDEO_SERVER/CONFIGS/$streamConfig");
+        require("/home/ubuntu/Source/CONFIGS/$streamConfig");
         if(-e "/var/streaming/playlists/$playlist/$playlist.config"){
 
 		    # Stop VideoServer
@@ -86,7 +86,7 @@ sub streamStop($streamConfig){
 
 sub streamStatus($streamConfig){
 
-    require("/home/videouser/VIDEO_SERVER/CONFIGS/$streamConfig");
+    require("/home/ubuntu/Source/CONFIGS/$streamConfig");
 
     if(-e "/var/streaming/playlists/$playlist/$playlist.config"){
 
@@ -121,7 +121,7 @@ sub streamStatus($streamConfig){
 
 sub streamProc($streamConfig){
 
-    require("/home/videouser/VIDEO_SERVER/CONFIGS/$streamConfig");
+    require("/home/ubuntu/Source/CONFIGS/$streamConfig");
     if(-e "/var/streaming/playlists/$playlist/$playlist.config"){
 
         `ps -ef | grep /var/streaming/playlists/$playlist/$playlist.config | grep -v grep`;

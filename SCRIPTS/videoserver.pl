@@ -11,10 +11,10 @@ getopt('c:');
 chomp($opt_c);
 
 ### We have to get/require a config file to continue
-if(-e "/home/videouser/VIDEO_SERVER/CONFIGS/$opt_c"){
+if(-e "/home/ubuntu/Source/CONFIGS/$opt_c"){
 
-require "/home/videouser/VIDEO_SERVER/INCLUDE/MasterConfig.inc";
-require "/home/videouser/VIDEO_SERVER/CONFIGS/$opt_c";
+require "/home/home/Source/INCLUDE/MasterConfig.inc";
+require "/home/ubuntu/Source/CONFIGS/$opt_c";
 
 ### Define these things ahead of time
 my $streamStart = 1;
@@ -170,7 +170,7 @@ while($streamStart == 1)
 
 sub process_buffer($this_date, $get_time){
 
-	require "/home/videouser/VIDEO_SERVER/INCLUDE/MasterConfig.inc";
+	require "/home/Source/INCLUDE/MasterConfig.inc";
     @clean_time = split(/.mp4/,$get_time);
     $this_time = @clean_time[0];
     $this_year = substr($this_date, 0, 4);
@@ -263,7 +263,7 @@ sub round_buffer_length($) {
 ### SEND TO DARWIN PLAYLIST ###
 sub sendToDarwin($offset, $stream){
 
-	require "/home/videouser/VIDEO_SERVER/CONFIGS/$opt_c";
+	require "/home/ubuntu/Source/CONFIGS/$opt_c";
 
 	$file = $ftp.$stream."_".$offset;
 	 
@@ -320,7 +320,7 @@ sub cleanUpPlaylist{
 sub runArchiveSort($opt_c){
 
 	### If processing is already set, leave until its time
-	if(-e "/home/videouser/VIDEO_SERVER/TMP/$opt_c.processing"){
+	if(-e "/home/ubuntu/Source/TMP/$opt_c.processing"){
 	
 		### print "*** Archive Is Already Running *** \n";
 	
@@ -347,7 +347,7 @@ sub runProxy(){
 sub runMaint(){
 
     ### If processing is already set, leave until its time
-    if(-e "/home/videouser/VIDEO_SERVER/TMP/backup.running"){
+    if(-e "/home/ubuntu/Source/TMP/backup.running"){
 
         ### print "*** Backup Is Already Running *** \n";
 
@@ -365,6 +365,6 @@ sub runMaint(){
 sub cleanMaint(){
 
     ### Remove the trigger file
-    `rm -rf /home/videouser/VIDEO_SERVER/TMP/backup.running`;
+    `rm -rf /home/ubuntu/Source/TMP/backup.running`;
 
 }				
