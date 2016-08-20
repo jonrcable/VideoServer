@@ -1,27 +1,62 @@
 Video Streaming Server
 
+# Basic Update and Extra Repos
+
 sudo apt-get update
 sudo apt-get upgrade
 sudo apt-get dist-upgrade
-
 sudo add-apt-repository ppa:mc3man/trusty-media
+sudo apt-get update
+sudo apt-get install git ffmpeg unzip gpac build-essential
 
-sudo apt-get upgdate
+# install the private ssh-key
 
-sudo apt-get install ffmpeg build-essential unzip gpac
+...
 
-sudo perlbrew install perl-5.16.3
-sudo perlbrew switch perl-5.16.3
+# Custom Compile Perl
+
+wget http://www.cpan.org/src/5.0/perl-5.12.5.tar.gz
+tar -xzf perl-5.12.5.tar.gz
+cd perl-5.12.5
+./Configure -des -Dprefix=/usr/local
+make
+make test
+sudo make install
+
+# CPAN Modules
+
+wget http://search.cpan.org/CPAN/authors/id/M/MI/MIYAGAWA/App-cpanminus-1.5017.tar.gz
+tar -xzf App-cpanminus-1.5017.tar.gz
+cd App-cpanminus-1.5017
+perl Make.pl
+make
+make test
+sudo make install
+
+sudo addgroup --system qtss
+sudo adduser --system --no-create-home --ingroup qtss qtss
+
+git clone git@github.com:jonrcable/VideoServer.git Source
+
+cd ~/Source/INSTALL/DarwinStreamingSrvr6.0.3-Source
+
+sudo ./Install
+
+Test MP4 Box
+/usr/bin/MP4Box -version
+
+# Install the s3fs file system
+https://github.com/s3fs-fuse/s3fs-fuse
+
+.......................
+old notes
+.......................
 
 https://github.com/downloads/lstoll/dss/DarwinStreamingSrvr6.0.3-L2-Linux-x64.deb.gz
 
 gzip -d DarwinStreamingSrvr6.0.3-L2-Linux-x64.deb.gz
 
 sudo dpkg -i DarwinStreamingSrvr6.0.3-L2-Linux-x64.deb
-
-Test MP4 Box
-/usr/bin/MP4Box -version
-
 
 
 1. Install Perl
@@ -58,7 +93,3 @@ make
 make test
 sudo make install
 After that you can install CPAN modules for your new version of Perl.
-
-
-
-

@@ -107,7 +107,6 @@ if($opt_p eq 'server'){
     print "(server status) ./mngserver.pl -p server -s status\n";
     print "(start server) ./mngserver.pl -p server -s start\n";
     print "(restart streams) ./mngserver.pl -p stream -s restart\n";
-    print "(make backup) ./mngserver.pl -p backup\n";
     print "\n";
 
 }
