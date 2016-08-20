@@ -30,7 +30,7 @@ sub startServices(){
 
     my $QTSSService = `/bin/ps cax | /bin/grep DarwinStreaming`;
     if(!$QTSSService){
-            print "* QTSS Not Running... starting\n";
+        print "* QTSS Not Running... starting\n";
         `/usr/bin/perl /usr/local/sbin/streamingadminserver.pl`;
     }
 
@@ -65,9 +65,14 @@ sub statusServices(){
 
     #print "* Unity Server Status: ";
     #print "(try sending): checkservice.pl -s start OR stop\n";
-    print "* ".`service mysqld status`;
-    print "* ".`service httpd status`;
     print "* ".`service vsftpd status`;
+    my $FTPStatus = `/bin/ps cax | /bin/grep vsftpd`;
+    if($FTPStatus){
+        print  "* ftp is running\n";
+    }else{
+        print  "* ftp is stopped\n";
+    }
+
     my $QTSSService = `/bin/ps cax | /bin/grep DarwinStreaming`;
     if($QTSSService){
         print "* qtss is running";
