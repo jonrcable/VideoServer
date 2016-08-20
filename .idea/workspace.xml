@@ -87,32 +87,14 @@
       <file leaf-file-name="mountcheck.pl" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/SCRIPTS/mountcheck.pl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1020">
-              <caret line="69" column="82" selection-start-line="69" selection-start-column="82" selection-end-line="69" selection-end-column="82" />
+            <state relative-caret-position="-913">
+              <caret line="27" column="6" selection-start-line="27" selection-start-column="6" selection-end-line="27" selection-end-column="6" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="e#61#77#0#Perl5" expanded="true" />
+                <element signature="e#375#392#0#Perl5" expanded="true" />
+                <element signature="e#624#641#0#Perl5" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="backupsql.pl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BACKUP/backupsql.pl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="35" column="121" selection-start-line="35" selection-start-column="121" selection-end-line="35" selection-end-column="121" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MasterConfig.inc" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/INCLUDE/MasterConfig.inc">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="33" column="34" selection-start-line="33" selection-start-column="34" selection-end-line="33" selection-end-column="34" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -155,8 +137,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="15" />
-    <option name="y" value="29" />
+    <option name="x" value="9" />
+    <option name="y" value="33" />
     <option name="width" value="1414" />
     <option name="height" value="1000" />
   </component>
@@ -450,7 +432,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="15" y="29" width="1414" height="1000" extended-state="0" />
+    <frame x="9" y="33" width="1414" height="1000" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3019802" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -770,11 +752,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/SCRIPTS/mountcheck.pl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1020">
-          <caret line="69" column="82" selection-start-line="69" selection-start-column="82" selection-end-line="69" selection-end-column="82" />
+        <state relative-caret-position="-913">
+          <caret line="27" column="6" selection-start-line="27" selection-start-column="6" selection-end-line="27" selection-end-column="6" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="e#61#77#0#Perl5" expanded="true" />
+            <element signature="e#375#392#0#Perl5" expanded="true" />
+            <element signature="e#624#641#0#Perl5" expanded="true" />
           </folding>
         </state>
       </provider>

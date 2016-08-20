@@ -15,27 +15,15 @@ if($opt_s eq 'start'){
 
 	### Check Unity Video
 	$testMount = $livsmount;
-	$s3bucket = 'unity-client-video';
-	checkEndpoint($testMount, $s3bucket);
-
-	### Check Unity Documents
-	$testMount = $docsmount;
-	$s3bucket = 'unity-client-documents';
+	$s3bucket = 'unifi-client-video';
 	checkEndpoint($testMount, $s3bucket);
 
 	### Global Checks
-	checkPaths();
+	# checkPaths();
 
 }elsif($opt_s eq 'stop'){
 
 	stopMounts();
-
-}elsif($opt_s eq 'service'){
-
-    ### Check Unity Video
-    $testMount = $livsmount;
-    $s3bucket = 'unity-client-video';
-    checkEndpoint($testMount, $s3bucket);
 
 }else{
 
@@ -46,7 +34,7 @@ if($opt_s eq 'start'){
     checkEndpoint($testMount, $s3bucket);
 
     ### Global Checks
-    checkPaths();
+    # checkPaths();
         
 }
 
@@ -109,12 +97,12 @@ sub checkPaths(){
     require "/home/ubuntu/Source/INCLUDE/MasterConfig.inc";
 
 	print "* Path Test - "; 
-    if(-d "$docsmount/$client/$project/Video"){
+    if(-d "$livsmount/$client/$project/video"){
         print "* Documents Path Exists -> ";
     }else{
         ## Make project directory
         print "* Documents Path Created -> ";
-        `mkdir $docsmount/$client/$project/Video`;
+        `mkdir $livsmount/$client/$project/video`;
     }
 
 	print " DONE \n";
